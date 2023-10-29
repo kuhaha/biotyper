@@ -1,3 +1,32 @@
+# math
+- `round()`
+```python
+f = 123.456
+print(round(f))
+print(round(f,1))
+print(round(f,2))
+print(round(f,-1))
+print(round(f,-2))
+# 123
+# 123.5
+# 123.46
+# 120.0
+# 100.0
+```
+
+- `quitize()`
+```python
+from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_EVEN
+f = 123.456
+print(Decimal(f))
+print(Decimal(str(f)).quantize(Decimal('0'), rounding=ROUND_HALF_UP))
+print(Decimal(str(f)).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP))
+print(Decimal(str(f)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))
+# 123.4560000000000030695446184836328029632568359375
+# 123
+# 123.5
+# 123.46
+```
 # scikit learn
 
 - Feature Extraction, Feature Selection
