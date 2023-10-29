@@ -12,8 +12,8 @@ Each clustering algorithm comes in two variants: a class, that implements the fi
 
 - `cluster.AffinityPropagation(*[, damping, ...])`, Perform Affinity Propagation Clustering of data.
 - `cluster.AgglomerativeClustering([...])`, Agglomerative Clustering.
-- `cluster.Birch(*[, threshold, ...])`, Implements the BIRCH clustering algorithm.
-- `cluster.DBSCAN([eps, min_samples, metric, ...])`, Perform DBSCAN clustering from vector array or distance matrix.
+- `cluster.Birch(*[, threshold, ...])`, Implements the BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies) clustering algorithm.
+- `cluster.DBSCAN([eps, min_samples, metric, ...])`, Perform DBSCAN (Density-Based Spatial Clustering of Applications with Noise) clustering from vector array or distance matrix.
 - `cluster.HDBSCAN([min_cluster_size, ...])`, Cluster data using hierarchical density-based clustering.
 - `cluster.FeatureAgglomeration([n_clusters, ...])`, Agglomerate features.
 
