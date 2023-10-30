@@ -1,5 +1,5 @@
 CWT 
-- Continuous Wavelet Transform. A CWT performs a convolution with data using the wavelet function, which is characterized by a *width* parameter and *length* parameter. The wavelet function is allowed to be complex.
+- *Continuous Wavelet Transform*. A CWT performs a convolution with data using the wavelet function, which is characterized by a *width* parameter and *length* parameter. The wavelet function is allowed to be complex.
 
 .. Wavelet function takes 2 arguments. The first argument is the number of points that the returned vector will have (*len(wavelet(length,width)) == length*). The second is a *width* parameter, defining the size of the wavelet (e.g. standard deviation of a gaussian). 
 
@@ -14,7 +14,7 @@ scipy.signal.cwt(
 ```
 
 DBSCAN 
-- Density-Based Spatial Clustering of Applications with Noise. Finds core samples of high density and expands clusters from them. Good for data which contains clusters of similar density.
+- *Density-Based Spatial Clustering of Applications with Noise*. Finds core samples of high density and expands clusters from them. Good for data which contains clusters of similar density.
 ```python
 sklearn.cluster.DBSCAN(
 	eps=0.5,  # epsilon: maximum distance to be considered as in the neighborhood 
@@ -30,7 +30,7 @@ sklearn.cluster.DBSCAN(
 ```
 
 HDBSCAN 
-- Hierarchical Density-Based Spatial Clustering of Applications with Noise. Performs DBSCAN over varying epsilon values and integrates the result to find a clustering that gives the best stability over epsilon. This allows HDBSCAN to find clusters of varying densities (unlike DBSCAN), and be more robust to parameter selection. 
+- *Hierarchical Density-Based Spatial Clustering of Applications with Noise*. Performs DBSCAN over varying epsilon values and integrates the result to find a clustering that gives the best stability over epsilon. This allows HDBSCAN to find clusters of varying densities (unlike DBSCAN), and be more robust to parameter selection. 
 
 ```python
 sklearn.cluster.HDBSCAN(
@@ -54,7 +54,7 @@ sklearn.cluster.HDBSCAN(
 Kernel Density Estimation 
   - Density estimation walks the line between unsupervised learning, feature engineering, and data modeling. Some of the most popular and useful density estimation techniques are mixture models such as Gaussian Mixtures, and neighbor-based approaches such as the kernel density estimate.
   - Kernel density estimation in scikit-learn is implemented in the KernelDensity estimator, which uses the Ball Tree or KD Tree for efficient queries.   
-  - Mathematically, a kernel is a positive function $K(x;h) which is controlled by the bandwidth parameter. Given this kernel form, the density estimate at a point  within a group of points $x_i; i=1,2,\cdots, N$ is given by:
+  - Mathematically, a kernel is a positive function `K(x;h)` which is controlled by the bandwidth parameter. Given this kernel form, the density estimate at a point  within a group of points $x_i; i=1,\cdots,N$ is given by:
    \[
    	\rho_{K}(y)=\sum K(y-x_i;h) 
    \]
